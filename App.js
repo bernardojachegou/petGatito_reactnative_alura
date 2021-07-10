@@ -1,22 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
-import { PetServices } from './src/views/PetServices';
+import { BaseScreen } from './src/components/BaseScreen';
+import { Routes } from './src/routes';
+import { Cart } from './src/views/Cart';
 
 export default function App() {
   return (
-    <SafeAreaView>
-      <StatusBar />
-      <PetServices />
-    </SafeAreaView>
+    <BaseScreen>
+      <Routes />
+    </BaseScreen>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

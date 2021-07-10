@@ -33,7 +33,7 @@ export const PetProduct = ({ name, price, description }) => {
       </TouchableOpacity>
       {expand && (
         <View style={styles.cart}>
-          <View>
+          <TouchableOpacity>
             <View style={styles.productPrice}>
               <Text style={styles.description}>Quantidade: </Text>
               <InputField
@@ -46,8 +46,8 @@ export const PetProduct = ({ name, price, description }) => {
               <Text style={styles.description}>Preço: </Text>
               <Text style={styles.price}>{moneyFormat(totalValue)}</Text>
             </View>
-          </View>
-          <BuyButton value={'Adicionar'} action={() => {}} />
+          </TouchableOpacity>
+          <BuyButton value={'Adicionar ao carrinho'} action={() => {}} />
         </View>
       )}
       <View style={styles.breakLine} />
