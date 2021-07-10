@@ -16,6 +16,7 @@ export default (small, upsideDown) =>
       shadowOpacity: 0.23,
       shadowRadius: 2.62,
       elevation: 4,
+      borderRadius: 20,
     },
     buttonText: {
       fontWeight: 'bold',

@@ -5,7 +5,7 @@ import { InputField } from '../../../../components/InputField';
 import { moneyFormat } from '../../../../utils/utils';
 import styles from './styles';
 
-export const PetProduct = ({ name, price, description, quantity }) => {
+export const CartProduct = ({ name, price, description, quantity }) => {
   const [totalProducts, setTotalProducts] = useState(quantity);
   const [totalValue, setTotalValue] = useState(price * quantity);
 

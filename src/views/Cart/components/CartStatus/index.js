@@ -12,7 +12,7 @@ export const CartStatus = ({ total }) => {
         <Text style={styles.value}>{moneyFormat(total)}</Text>
       </View>
       <View style={styles.button}>
-        <BuyButton value={'Concluir pedido'} upsideDown />
+        <BuyButton value={'Concluir pedido'} changeColor />
       </View>
     </View>
   );

@@ -6,7 +6,7 @@ export default StyleSheet.create({
     padding: 24,
   },
   name: {
-    color: colors.secondaryColor,
+    color: colors.primaryColor,
     fontWeight: 'bold',
     fontSize: 16,
   },
@@ -32,7 +32,7 @@ export default StyleSheet.create({
   breakLine: {
     marginHorizontal: 24,
     borderBottomWidth: 1,
-    borderBottomColor: colors.neutralColor,
+    borderBottomColor: colors.primaryColor,
   },
   cart: {
     paddingHorizontal: 24,

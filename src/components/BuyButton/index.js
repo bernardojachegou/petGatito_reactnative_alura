@@ -1,18 +1,18 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
-import defaultStylesFunc from './styles';
+import setStyles from './styles';
 
 export const BuyButton = ({
   small = false,
-  upsideDown = false,
+  changeColor = false,
   value,
   action,
   styles,
 }) => {
-  const defaultStyles = defaultStylesFunc(small, upsideDown);
+  const staticStyles = setStyles(small, changeColor);
   return (
-    <TouchableOpacity onPress={action} style={[defaultStyles.button, styles]}>
-      <Text style={defaultStyles.buttonText}>{value}</Text>
+    <TouchableOpacity onPress={action} style={[staticStyles.button, styles]}>
+      <Text style={staticStyles.buttonText}>{value}</Text>
     </TouchableOpacity>
   );
 };

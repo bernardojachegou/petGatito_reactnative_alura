@@ -1,10 +1,9 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { PetServices } from '../views/PetServices';
 import { Cart } from '../views/Cart';
 import { colors } from '../styles/global';
-import { color } from 'react-native-reanimated';
 
 const Tab = createBottomTabNavigator();
 

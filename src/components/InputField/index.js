@@ -1,6 +1,6 @@
 import React from 'react';
 import { TextInput } from 'react-native';
-import defaultStyles from './styles';
+import Styles from './styles';
 
 export const InputField = ({ itemValue, action, styles }) => {
   const updateValue = (newItemValue, callbackAction) => {
@@ -15,7 +15,7 @@ export const InputField = ({ itemValue, action, styles }) => {
   const stringNumber = String(itemValue);
   return (
     <TextInput
-      style={[defaultStyles.field, styles]}
+      style={[Styles.field, styles]}
       keyboardType="number-pad"
       selectTextOnFocus
       onChangeText={(newItemValue) => {
