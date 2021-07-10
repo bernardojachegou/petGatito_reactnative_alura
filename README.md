@@ -22,7 +22,11 @@ cart.
 
 ## 🎯 Used Concepts
 <ul>
-<li></li>
+<li>Understading Expo CLI.</li>
+<li>Function Components and RN Hooks.</li>
+<li>Android and iOS Delivering.</li>
+<li>TabBar React Navigation.</li>
+<li>TabBar Styling.</li>
 </ul>
 
 
